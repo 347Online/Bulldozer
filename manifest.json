@@ -3,10 +3,19 @@
   "name": "Bulldozer",
   "version": "1.0",
 
+  "icons": {
+    "16": "./assets/icon/icon16x.png",
+    "48": "./assets/icon/icon48x.png",
+    "128": "./assets/icon/icon128x.jpeg"
+  },
+
   "content_scripts": [
     {
       "matches": ["https://*/*","http://*/*"],
       "js" : ["./main.js"]
     }
-  ]
+  ],
+  
+  "persmissions" : ["storage"]
+  
 }
