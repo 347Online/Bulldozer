@@ -9,14 +9,17 @@
     "128": "./assets/icon/icon128x.jpeg"
   },
 
+  "background": {
+    "service_worker": "main.js"
+  },
   "content_scripts": [
     {
-      "matches": ["https://*/*","http://*/*"],
-      "js" : ["./main.js"]
+      "matches": ["<all_urls>"],
+      "css": ["./style.css"]
     }
   ],
-  
-  "permissions" : ["storage"],
+
+  "permissions" : ["background","storage"],
 
   "action": {
     "default_popup": "index.html"
