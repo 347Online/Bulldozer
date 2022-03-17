@@ -6,7 +6,7 @@ function updateSaveData() {
 function loadSaveData() {
   chrome.storage.sync.get(['text'], function(response) {
     document.querySelector('#notepad').innerText = response.text;
-    setInterval(updateSaveData,1000)
+    setInterval(updateSaveData,600)
   });
 }
 
