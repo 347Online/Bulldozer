@@ -9,13 +9,11 @@
     "128": "./assets/icon/icon128x.jpeg"
   },
 
-  "background": {
-    "service_worker": "main.js"
-  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": ["./style.css"]
+      "css": ["./style.css"],
+      "js": ["index.js"]
     }
   ],
 
